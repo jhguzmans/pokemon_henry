@@ -1,0 +1,43 @@
+.Home {
+  background: linear-gradient(
+    45deg,
+    #110505,
+    #444444
+  ); /* Degradado de rojo a rojo oscuro */
+  color: white;
+  padding: 20px;
+  margin-top: 0px; /* Asegura que comience debajo de la barra de navegación */
+  min-height: calc(
+    100vh - 80px
+  ); /* Establece la altura mínima para llenar la pantalla */
+  overflow: auto; /* Agrega una barra de desplazamiento cuando el contenido es largo */
+
+  /* Estilos para los Cards y Paginado dentro del componente Home */
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Estilos para los botones dentro del componente Home */
+  button {
+    background: #ff0000; /* Fondo rojo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background: #0d0303; /* Fondo rojo oscuro en hover */
+  }
+}
+.Cards {
+  width: 100%;
+  max-width: 100%; /* Asegura que Cards ocupe todo el ancho */
+  margin: 0; /* Elimina cualquier margen que pueda afectar el ancho */
+}

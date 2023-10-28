@@ -1,6 +1,7 @@
 const URL = "https://pokeapi.co/api/v2/pokemon";
 const axios = require("axios");
 const c_getPokemonByName = require("../controlers/c_getPokemonByName.js");
+const c_getPokemons = require("../controlers/c_getPokemons.js");
 const getPokemons = async (req, res) => {
   try {
     if (req.query.name) {
@@ -8,7 +9,7 @@ const getPokemons = async (req, res) => {
       const data = await c_getPokemonByName(name);
       return res.status(200).json(data);
     }
-    const { data } = await axios(`${URL}`);
+    const data = await c_getPokemons();
     return res.status(200).json(data);
   } catch (error) {
     return res.status(400).send(error.message);

@@ -1,0 +1,12 @@
+export const GET_POKEMONS = "GET_POKEMONS";
+export const SEARCH_POKEMON = "SEARCH_POKEMON";
+export const RESET_SEARCH = "RESET_SEARCH";
+export const FILTER = "FILTER";
+export const ORDER = "ORDER";
+export const FILTER_TYPE = "FILTER_TYPE";
+export const POKE_RENDER = "POKE_RENDER";
+export const NEXT_PAGE = "NEXT_PAGE";
+export const PREV_PAGE = "PREV_PAGE";
+export const SET_PAGE = "SET_PAGE";
+export const CURRENT_POKEMONS = "CURRENT_POKEMONS";
+export const SORT = "SORT";
